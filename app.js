@@ -20,34 +20,6 @@ if ('development' == app.get('env')) {
 	app.use(express.errorHandler());
 }
 
-app.get('/trace', function (req, res) {
-	var url = 'instagram.com';
-	console.log('trace ' + url);
-	traceroute.trace(url, function (err, hops) {
-		if (!err) {
-			var waypoints = [];
-			hops.forEach(function (hop) {
-				for (key in hop) {
-					console.log('lookup geoip ' + key);
-					hop.geoip = geoip.lookup(key);
-					if (hop.geoip) {
-						waypoints.push([hop.geoip.ll[0], hop.geoip.ll[1]]);
-					}
-				}
-			});
-			//console.log(hops);
-			var result = {};
-			result.attributes = {
-				"route_type": 3,
-				"id": "12500883",
-				"head_sign": url
-			};
-			result.waypoints = waypoints;
-			res.json(result);
-		}
-	});
-});
-
 app.get('/', function (req, res) {
 	res.render('index', { title: 'Express' });
 });
