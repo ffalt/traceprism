@@ -1,0 +1,326 @@
+{
+	"url": "twitter.com",
+	"waypoints": [
+		[
+			"9.7167",
+			"53.5833"
+		],
+		[
+			"10",
+			"53.55"
+		],
+		[
+			"10",
+			"53.55"
+		],
+		[
+			"10",
+			"53.55"
+		],
+		[
+			"10",
+			"53.55"
+		],
+		[
+			"8.6833",
+			"50.1167"
+		],
+		[
+			"-77.4755",
+			"38.9881"
+		],
+		[
+			"-77.4755",
+			"38.9881"
+		],
+		[
+			"-77.4755",
+			"38.9881"
+		],
+		[
+			"-77.4755",
+			"38.9881"
+		],
+		[
+			"-79.7679",
+			"36.0714"
+		]
+	],
+	"hops": [
+		{
+			"213.191.64.137": [
+				18,
+				17,
+				20
+			],
+			"ip": "213.191.64.137",
+			"geoip": {
+				"ip": "213.191.64.137",
+				"timestamp": 1372335017919,
+				"location": {
+					"coords": {
+						"latitude": "53.5833",
+						"longitude": "9.7167"
+					},
+					"address": {
+						"city": "Wedel",
+						"country": "Germany",
+						"country_code": "DE"
+					},
+					"gmtOffset": "1",
+					"dstOffset": "2"
+				}
+			}
+		},
+		{
+			"62.109.111.62": [
+				23,
+				16,
+				16
+			],
+			"ip": "62.109.111.62",
+			"geoip": {
+				"ip": "62.109.111.62",
+				"timestamp": 1372335018446,
+				"location": {
+					"coords": {
+						"latitude": "53.55",
+						"longitude": "10"
+					},
+					"address": {
+						"city": "Hamburg",
+						"country": "Germany",
+						"country_code": "DE"
+					},
+					"gmtOffset": "1",
+					"dstOffset": "2"
+				}
+			}
+		},
+		{
+			"213.191.87.189": [
+				36,
+				38,
+				36
+			],
+			"ip": "213.191.87.189",
+			"geoip": {
+				"ip": "213.191.87.189",
+				"timestamp": 1372335018902,
+				"location": {
+					"coords": {
+						"latitude": "53.55",
+						"longitude": "10"
+					},
+					"address": {
+						"city": "Hamburg",
+						"country": "Germany",
+						"country_code": "DE"
+					},
+					"gmtOffset": "1",
+					"dstOffset": "2"
+				}
+			}
+		},
+		{
+			"62.109.69.2": [
+				49,
+				35,
+				35
+			],
+			"ip": "62.109.69.2",
+			"geoip": {
+				"ip": "62.109.69.2",
+				"timestamp": 1372335019378,
+				"location": {
+					"coords": {
+						"latitude": "53.55",
+						"longitude": "10"
+					},
+					"address": {
+						"city": "Hamburg",
+						"country": "Germany",
+						"country_code": "DE"
+					},
+					"gmtOffset": "1",
+					"dstOffset": "2"
+				}
+			}
+		},
+		{
+			"62.109.69.19": [
+				35,
+				47,
+				35
+			],
+			"ip": "62.109.69.19",
+			"geoip": {
+				"ip": "62.109.69.19",
+				"timestamp": 1372335019845,
+				"location": {
+					"coords": {
+						"latitude": "53.55",
+						"longitude": "10"
+					},
+					"address": {
+						"city": "Hamburg",
+						"country": "Germany",
+						"country_code": "DE"
+					},
+					"gmtOffset": "1",
+					"dstOffset": "2"
+				}
+			}
+		},
+		{
+			"80.81.192.10": [
+				44,
+				43,
+				44
+			],
+			"ip": "80.81.192.10",
+			"geoip": {
+				"ip": "80.81.192.10",
+				"timestamp": 1372335020355,
+				"location": {
+					"coords": {
+						"latitude": "50.1167",
+						"longitude": "8.6833"
+					},
+					"address": {
+						"city": "Frankfurt Am Main",
+						"country": "Germany",
+						"country_code": "DE"
+					},
+					"gmtOffset": "1",
+					"dstOffset": "2"
+				}
+			}
+		},
+		{
+			"199.16.159.120": [
+				44,
+				44,
+				44
+			],
+			"ip": "199.16.159.120",
+			"geoip": {
+				"ip": "199.16.159.120",
+				"timestamp": 1372335020976,
+				"location": {
+					"coords": {
+						"latitude": "38.9881",
+						"longitude": "-77.4755"
+					},
+					"address": {
+						"city": "Sterling",
+						"country": "United States",
+						"country_code": "US"
+					},
+					"gmtOffset": "-5",
+					"dstOffset": "-4"
+				}
+			}
+		},
+		{
+			"199.16.159.112": [
+				128,
+				128,
+				138
+			],
+			"ip": "199.16.159.112",
+			"geoip": {
+				"ip": "199.16.159.112",
+				"timestamp": 1372335021467,
+				"location": {
+					"coords": {
+						"latitude": "38.9881",
+						"longitude": "-77.4755"
+					},
+					"address": {
+						"city": "Sterling",
+						"country": "United States",
+						"country_code": "US"
+					},
+					"gmtOffset": "-5",
+					"dstOffset": "-4"
+				}
+			}
+		},
+		{
+			"199.16.159.111": [
+				195,
+				195,
+				208
+			],
+			"ip": "199.16.159.111",
+			"geoip": {
+				"ip": "199.16.159.111",
+				"timestamp": 1372335021933,
+				"location": {
+					"coords": {
+						"latitude": "38.9881",
+						"longitude": "-77.4755"
+					},
+					"address": {
+						"city": "Sterling",
+						"country": "United States",
+						"country_code": "US"
+					},
+					"gmtOffset": "-5",
+					"dstOffset": "-4"
+				}
+			}
+		},
+		{
+			"199.16.159.29": [
+				201,
+				202,
+				201
+			],
+			"ip": "199.16.159.29",
+			"geoip": {
+				"ip": "199.16.159.29",
+				"timestamp": 1372335022384,
+				"location": {
+					"coords": {
+						"latitude": "38.9881",
+						"longitude": "-77.4755"
+					},
+					"address": {
+						"city": "Sterling",
+						"country": "United States",
+						"country_code": "US"
+					},
+					"gmtOffset": "-5",
+					"dstOffset": "-4"
+				}
+			}
+		},
+		{
+			"199.59.149.230": [
+				198,
+				198,
+				198
+			],
+			"ip": "199.59.149.230",
+			"geoip": {
+				"ip": "199.59.149.230",
+				"timestamp": 1372335022864,
+				"location": {
+					"coords": {
+						"latitude": "36.0714",
+						"longitude": "-79.7679"
+					},
+					"address": {
+						"city": "Greensboro",
+						"country": "United States",
+						"country_code": "US"
+					},
+					"gmtOffset": "-5",
+					"dstOffset": "-4"
+				}
+			}
+		}
+	]
+}

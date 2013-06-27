@@ -1,0 +1,181 @@
+{
+	"url": "reddit.com",
+	"waypoints": [
+		[
+			"9.7167",
+			"53.5833"
+		],
+		[
+			"10",
+			"53.55"
+		],
+		[
+			"10",
+			"53.55"
+		],
+		[
+			"10",
+			"53.55"
+		],
+		[
+			"10",
+			"53.55"
+		],
+		[
+			"8.6833",
+			"50.1167"
+		]
+	],
+	"hops": [
+		{
+			"213.191.64.26": [
+				21,
+				27,
+				18
+			],
+			"ip": "213.191.64.26",
+			"geoip": {
+				"ip": "213.191.64.26",
+				"timestamp": 1372288072237,
+				"location": {
+					"coords": {
+						"latitude": "53.5833",
+						"longitude": "9.7167"
+					},
+					"address": {
+						"city": "Wedel",
+						"country": "Germany",
+						"country_code": "DE"
+					},
+					"gmtOffset": "1",
+					"dstOffset": "2"
+				}
+			}
+		},
+		{
+			"62.109.111.30": [
+				62,
+				37,
+				17
+			],
+			"ip": "62.109.111.30",
+			"geoip": {
+				"ip": "62.109.111.30",
+				"timestamp": 1372288072747,
+				"location": {
+					"coords": {
+						"latitude": "53.55",
+						"longitude": "10"
+					},
+					"address": {
+						"city": "Hamburg",
+						"country": "Germany",
+						"country_code": "DE"
+					},
+					"gmtOffset": "1",
+					"dstOffset": "2"
+				}
+			}
+		},
+		{
+			"213.191.87.225": [
+				37,
+				36,
+				39
+			],
+			"ip": "213.191.87.225",
+			"geoip": {
+				"ip": "213.191.87.225",
+				"timestamp": 1372288073255,
+				"location": {
+					"coords": {
+						"latitude": "53.55",
+						"longitude": "10"
+					},
+					"address": {
+						"city": "Hamburg",
+						"country": "Germany",
+						"country_code": "DE"
+					},
+					"gmtOffset": "1",
+					"dstOffset": "2"
+				}
+			}
+		},
+		{
+			"62.109.69.2": [
+				37,
+				37,
+				36
+			],
+			"ip": "62.109.69.2",
+			"geoip": {
+				"ip": "62.109.69.2",
+				"timestamp": 1372288073718,
+				"location": {
+					"coords": {
+						"latitude": "53.55",
+						"longitude": "10"
+					},
+					"address": {
+						"city": "Hamburg",
+						"country": "Germany",
+						"country_code": "DE"
+					},
+					"gmtOffset": "1",
+					"dstOffset": "2"
+				}
+			}
+		},
+		{
+			"62.109.69.21": [
+				36,
+				36,
+				36
+			],
+			"ip": "62.109.69.21",
+			"geoip": {
+				"ip": "62.109.69.21",
+				"timestamp": 1372288074185,
+				"location": {
+					"coords": {
+						"latitude": "53.55",
+						"longitude": "10"
+					},
+					"address": {
+						"city": "Hamburg",
+						"country": "Germany",
+						"country_code": "DE"
+					},
+					"gmtOffset": "1",
+					"dstOffset": "2"
+				}
+			}
+		},
+		{
+			"80.81.192.28": [
+				43,
+				37,
+				37
+			],
+			"ip": "80.81.192.28",
+			"geoip": {
+				"ip": "80.81.192.28",
+				"timestamp": 1372288074678,
+				"location": {
+					"coords": {
+						"latitude": "50.1167",
+						"longitude": "8.6833"
+					},
+					"address": {
+						"city": "Frankfurt Am Main",
+						"country": "Germany",
+						"country_code": "DE"
+					},
+					"gmtOffset": "1",
+					"dstOffset": "2"
+				}
+			}
+		}
+	]
+}

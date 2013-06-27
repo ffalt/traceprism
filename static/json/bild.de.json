@@ -1,0 +1,268 @@
+{
+	"url": "bild.de",
+	"waypoints": [
+		[
+			"9.7167",
+			"53.5833"
+		],
+		[
+			"10",
+			"53.55"
+		],
+		[
+			"9.7167",
+			"53.5833"
+		],
+		[
+			"10",
+			"53.55"
+		],
+		[
+			"10",
+			"53.55"
+		],
+		[
+			"9.7167",
+			"53.5833"
+		],
+		[
+			"-0.1262",
+			"51.5002"
+		],
+		[
+			"8.6833",
+			"50.1167"
+		],
+		[
+			"8.6833",
+			"50.1167"
+		]
+	],
+	"hops": [
+		{
+			"213.191.64.26": [
+				21,
+				18,
+				19
+			],
+			"ip": "213.191.64.26",
+			"geoip": {
+				"ip": "213.191.64.26",
+				"timestamp": 1372293448118,
+				"location": {
+					"coords": {
+						"latitude": "53.5833",
+						"longitude": "9.7167"
+					},
+					"address": {
+						"city": "Wedel",
+						"country": "Germany",
+						"country_code": "DE"
+					},
+					"gmtOffset": "1",
+					"dstOffset": "2"
+				}
+			}
+		},
+		{
+			"62.109.111.62": [
+				17,
+				17,
+				18
+			],
+			"ip": "62.109.111.62",
+			"geoip": {
+				"ip": "62.109.111.62",
+				"timestamp": 1372293448656,
+				"location": {
+					"coords": {
+						"latitude": "53.55",
+						"longitude": "10"
+					},
+					"address": {
+						"city": "Hamburg",
+						"country": "Germany",
+						"country_code": "DE"
+					},
+					"gmtOffset": "1",
+					"dstOffset": "2"
+				}
+			}
+		},
+		{
+			"213.191.66.25": [
+				36,
+				36,
+				36
+			],
+			"ip": "213.191.66.25",
+			"geoip": {
+				"ip": "213.191.66.25",
+				"timestamp": 1372293450308,
+				"location": {
+					"coords": {
+						"latitude": "53.5833",
+						"longitude": "9.7167"
+					},
+					"address": {
+						"city": "Wedel",
+						"country": "Germany",
+						"country_code": "DE"
+					},
+					"gmtOffset": "1",
+					"dstOffset": "2"
+				}
+			}
+		},
+		{
+			"62.109.69.34": [
+				57,
+				38,
+				38
+			],
+			"ip": "62.109.69.34",
+			"geoip": {
+				"ip": "62.109.69.34",
+				"timestamp": 1372293450833,
+				"location": {
+					"coords": {
+						"latitude": "53.55",
+						"longitude": "10"
+					},
+					"address": {
+						"city": "Hamburg",
+						"country": "Germany",
+						"country_code": "DE"
+					},
+					"gmtOffset": "1",
+					"dstOffset": "2"
+				}
+			}
+		},
+		{
+			"62.109.69.5": [
+				37,
+				36,
+				37
+			],
+			"ip": "62.109.69.5",
+			"geoip": {
+				"ip": "62.109.69.5",
+				"timestamp": 1372293451354,
+				"location": {
+					"coords": {
+						"latitude": "53.55",
+						"longitude": "10"
+					},
+					"address": {
+						"city": "Hamburg",
+						"country": "Germany",
+						"country_code": "DE"
+					},
+					"gmtOffset": "1",
+					"dstOffset": "2"
+				}
+			}
+		},
+		{
+			"213.191.76.190": [
+				38,
+				39,
+				41
+			],
+			"ip": "213.191.76.190",
+			"geoip": {
+				"ip": "213.191.76.190",
+				"timestamp": 1372293451918,
+				"location": {
+					"coords": {
+						"latitude": "53.5833",
+						"longitude": "9.7167"
+					},
+					"address": {
+						"city": "Wedel",
+						"country": "Germany",
+						"country_code": "DE"
+					},
+					"gmtOffset": "1",
+					"dstOffset": "2"
+				}
+			}
+		},
+		{
+			"212.74.67.13": [
+				38,
+				37,
+				38
+			],
+			"ip": "212.74.67.13",
+			"geoip": {
+				"ip": "212.74.67.13",
+				"timestamp": 1372293452472,
+				"location": {
+					"coords": {
+						"latitude": "51.5002",
+						"longitude": "-0.1262"
+					},
+					"address": {
+						"city": "London",
+						"country": "United Kingdom",
+						"country_code": "GB"
+					},
+					"gmtOffset": "0",
+					"dstOffset": "1"
+				}
+			}
+		},
+		{
+			"213.61.13.8": [
+				36,
+				37,
+				37
+			],
+			"ip": "213.61.13.8",
+			"geoip": {
+				"ip": "213.61.13.8",
+				"timestamp": 1372293453054,
+				"location": {
+					"coords": {
+						"latitude": "50.1167",
+						"longitude": "8.6833"
+					},
+					"address": {
+						"city": "Frankfurt Am Main",
+						"country": "Germany",
+						"country_code": "DE"
+					},
+					"gmtOffset": "1",
+					"dstOffset": "2"
+				}
+			}
+		},
+		{
+			"213.61.13.70": [
+				38,
+				37,
+				38
+			],
+			"ip": "213.61.13.70",
+			"geoip": {
+				"ip": "213.61.13.70",
+				"timestamp": 1372293454893,
+				"location": {
+					"coords": {
+						"latitude": "50.1167",
+						"longitude": "8.6833"
+					},
+					"address": {
+						"city": "Frankfurt Am Main",
+						"country": "Germany",
+						"country_code": "DE"
+					},
+					"gmtOffset": "1",
+					"dstOffset": "2"
+				}
+			}
+		}
+	]
+}

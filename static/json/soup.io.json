@@ -1,0 +1,297 @@
+{
+	"url": "soup.io",
+	"waypoints": [
+		[
+			"9.7167",
+			"53.5833"
+		],
+		[
+			"10",
+			"53.55"
+		],
+		[
+			"10",
+			"53.55"
+		],
+		[
+			"10",
+			"53.55"
+		],
+		[
+			"9.7167",
+			"53.5833"
+		],
+		[
+			"8.6833",
+			"50.1167"
+		],
+		[
+			"16.3667",
+			"48.2"
+		],
+		[
+			"16.3667",
+			"48.2"
+		],
+		[
+			"16.3667",
+			"48.2"
+		],
+		[
+			"19.5",
+			"48.6667"
+		]
+	],
+	"hops": [
+		{
+			"213.191.64.26": [
+				21,
+				19,
+				25
+			],
+			"ip": "213.191.64.26",
+			"geoip": {
+				"ip": "213.191.64.26",
+				"timestamp": 1372289363375,
+				"location": {
+					"coords": {
+						"latitude": "53.5833",
+						"longitude": "9.7167"
+					},
+					"address": {
+						"city": "Wedel",
+						"country": "Germany",
+						"country_code": "DE"
+					},
+					"gmtOffset": "1",
+					"dstOffset": "2"
+				}
+			}
+		},
+		{
+			"62.109.111.30": [
+				18,
+				18,
+				17
+			],
+			"ip": "62.109.111.30",
+			"geoip": {
+				"ip": "62.109.111.30",
+				"timestamp": 1372289363855,
+				"location": {
+					"coords": {
+						"latitude": "53.55",
+						"longitude": "10"
+					},
+					"address": {
+						"city": "Hamburg",
+						"country": "Germany",
+						"country_code": "DE"
+					},
+					"gmtOffset": "1",
+					"dstOffset": "2"
+				}
+			}
+		},
+		{
+			"213.191.87.189": [
+				36,
+				35,
+				36
+			],
+			"ip": "213.191.87.189",
+			"geoip": {
+				"ip": "213.191.87.189",
+				"timestamp": 1372289364398,
+				"location": {
+					"coords": {
+						"latitude": "53.55",
+						"longitude": "10"
+					},
+					"address": {
+						"city": "Hamburg",
+						"country": "Germany",
+						"country_code": "DE"
+					},
+					"gmtOffset": "1",
+					"dstOffset": "2"
+				}
+			}
+		},
+		{
+			"62.109.69.2": [
+				36,
+				36,
+				37
+			],
+			"ip": "62.109.69.2",
+			"geoip": {
+				"ip": "62.109.69.2",
+				"timestamp": 1372289364906,
+				"location": {
+					"coords": {
+						"latitude": "53.55",
+						"longitude": "10"
+					},
+					"address": {
+						"city": "Hamburg",
+						"country": "Germany",
+						"country_code": "DE"
+					},
+					"gmtOffset": "1",
+					"dstOffset": "2"
+				}
+			}
+		},
+		{
+			"213.191.66.205": [
+				37,
+				37,
+				35
+			],
+			"ip": "213.191.66.205",
+			"geoip": {
+				"ip": "213.191.66.205",
+				"timestamp": 1372289365444,
+				"location": {
+					"coords": {
+						"latitude": "53.5833",
+						"longitude": "9.7167"
+					},
+					"address": {
+						"city": "Wedel",
+						"country": "Germany",
+						"country_code": "DE"
+					},
+					"gmtOffset": "1",
+					"dstOffset": "2"
+				}
+			}
+		},
+		{
+			"80.81.194.56": [
+				49,
+				49,
+				54
+			],
+			"ip": "80.81.194.56",
+			"geoip": {
+				"ip": "80.81.194.56",
+				"timestamp": 1372289365943,
+				"location": {
+					"coords": {
+						"latitude": "50.1167",
+						"longitude": "8.6833"
+					},
+					"address": {
+						"city": "Frankfurt Am Main",
+						"country": "Germany",
+						"country_code": "DE"
+					},
+					"gmtOffset": "1",
+					"dstOffset": "2"
+				}
+			}
+		},
+		{
+			"92.60.3.210": [
+				50,
+				55,
+				50
+			],
+			"ip": "92.60.3.210",
+			"geoip": {
+				"ip": "92.60.3.210",
+				"timestamp": 1372289366512,
+				"location": {
+					"coords": {
+						"latitude": "48.2",
+						"longitude": "16.3667"
+					},
+					"address": {
+						"city": "Vienna",
+						"country": "Austria",
+						"country_code": "AT"
+					},
+					"gmtOffset": "1",
+					"dstOffset": "2"
+				}
+			}
+		},
+		{
+			"92.60.6.2": [
+				49,
+				49,
+				50
+			],
+			"ip": "92.60.6.2",
+			"geoip": {
+				"ip": "92.60.6.2",
+				"timestamp": 1372289366986,
+				"location": {
+					"coords": {
+						"latitude": "48.2",
+						"longitude": "16.3667"
+					},
+					"address": {
+						"city": "Vienna",
+						"country": "Austria",
+						"country_code": "AT"
+					},
+					"gmtOffset": "1",
+					"dstOffset": "2"
+				}
+			}
+		},
+		{
+			"77.244.255.26": [
+				53,
+				48,
+				49
+			],
+			"ip": "77.244.255.26",
+			"geoip": {
+				"ip": "77.244.255.26",
+				"timestamp": 1372289367515,
+				"location": {
+					"coords": {
+						"latitude": "48.2",
+						"longitude": "16.3667"
+					},
+					"address": {
+						"city": "Vienna",
+						"country": "Austria",
+						"country_code": "AT"
+					},
+					"gmtOffset": "1",
+					"dstOffset": "2"
+				}
+			}
+		},
+		{
+			"212.232.24.35": [
+				50,
+				49,
+				49
+			],
+			"ip": "212.232.24.35",
+			"geoip": {
+				"ip": "212.232.24.35",
+				"timestamp": 1372289368101,
+				"location": {
+					"coords": {
+						"latitude": "48.6667",
+						"longitude": "19.5"
+					},
+					"address": {
+						"city": "",
+						"country": "Slovakia",
+						"country_code": "SK"
+					},
+					"gmtOffset": "1",
+					"dstOffset": "2"
+				}
+			}
+		}
+	]
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>OpenDataCity - Traceprism</title>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="/static/leaflet/leaflet.css"/>
+	<link rel="stylesheet" type="text/css" href="/static/bootstrap/css/bootstrap.css"/>
+	<link rel="stylesheet" type="text/css" href="/static/bootstrap/font-awesome/css/font-awesome.min.css"/>
+	<script type="text/javascript" src="/static/jquery/jquery.min.js"></script>
+	<script type="text/javascript" src="/static/bootstrap/js/bootstrap.min.js"></script>
+	<style>
+		*[hidden] {
+			display: none;
+		}
+
+		#map {
+			width: 960px;
+			height: 500px;
+		}
+
+		path {
+			stroke: #0e06e4;
+			stroke-width: 1px;
+		}
+
+		path:hover {
+			stroke: brown;
+		}
+
+		#ips {
+			padding-left:  4px;
+		}
+
+	</style>
+</head>
+<body>
+<h1>Traceprism</h1>
+
+<div class="row">
+	<div class="span4">
+		<form id="adress" class="form-search">
+			<fieldset>
+				<input id="input" type="text" value=""/>
+				<input id="btn" class="btn" type="submit" value="Go"/>
+				<i id="spinner" class='icon-spinner icon-spin icon-large' hidden="true"></i>
+			</fieldset>
+		</form>
+	</div>
+	<div class="span8">
+		<p id="urls"></p>
+	</div>
+</div>
+<div class="row">
+	<div class="span12">
+		<p id="map"></p>
+	</div>
+	<div class="span4">
+		<p id="ips"></p>
+	</div>
+</div>
+
+<script src="static/jquery/jquery.min.js"></script>
+<script src="static/leaflet/leaflet.js"></script>
+<script src="static/raphael/raphael-min.js"></script>
+<script src="static/rlayer.js"></script>
+<script src="static/vtraceroute.js"></script>
+</body>

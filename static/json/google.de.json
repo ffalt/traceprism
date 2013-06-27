@@ -1,0 +1,268 @@
+{
+	"url": "google.de",
+	"waypoints": [
+		[
+			"9.7167",
+			"53.5833"
+		],
+		[
+			"10",
+			"53.55"
+		],
+		[
+			"9.7167",
+			"53.5833"
+		],
+		[
+			"-122.057",
+			"37.4192"
+		],
+		[
+			"-92.0858",
+			"34.9461"
+		],
+		[
+			"-122.057",
+			"37.4192"
+		],
+		[
+			"-122.057",
+			"37.4192"
+		],
+		[
+			"-122.057",
+			"37.4192"
+		],
+		[
+			"-122.057",
+			"37.4192"
+		]
+	],
+	"hops": [
+		{
+			"213.191.64.137": [
+				15,
+				15,
+				17
+			],
+			"ip": "213.191.64.137",
+			"geoip": {
+				"ip": "213.191.64.137",
+				"timestamp": 1372338158026,
+				"location": {
+					"coords": {
+						"latitude": "53.5833",
+						"longitude": "9.7167"
+					},
+					"address": {
+						"city": "Wedel",
+						"country": "Germany",
+						"country_code": "DE"
+					},
+					"gmtOffset": "1",
+					"dstOffset": "2"
+				}
+			}
+		},
+		{
+			"62.109.108.48": [
+				14,
+				15,
+				15
+			],
+			"ip": "62.109.108.48",
+			"geoip": {
+				"ip": "62.109.108.48",
+				"timestamp": 1372338158506,
+				"location": {
+					"coords": {
+						"latitude": "53.55",
+						"longitude": "10"
+					},
+					"address": {
+						"city": "Hamburg",
+						"country": "Germany",
+						"country_code": "DE"
+					},
+					"gmtOffset": "1",
+					"dstOffset": "2"
+				}
+			}
+		},
+		{
+			"213.191.77.118": [
+				25,
+				26,
+				19
+			],
+			"ip": "213.191.77.118",
+			"geoip": {
+				"ip": "213.191.77.118",
+				"timestamp": 1372338159062,
+				"location": {
+					"coords": {
+						"latitude": "53.5833",
+						"longitude": "9.7167"
+					},
+					"address": {
+						"city": "Wedel",
+						"country": "Germany",
+						"country_code": "DE"
+					},
+					"gmtOffset": "1",
+					"dstOffset": "2"
+				}
+			}
+		},
+		{
+			"209.85.249.182": [
+				17,
+				15,
+				18
+			],
+			"ip": "209.85.249.182",
+			"geoip": {
+				"ip": "209.85.249.182",
+				"timestamp": 1372338159563,
+				"location": {
+					"coords": {
+						"latitude": "37.4192",
+						"longitude": "-122.057"
+					},
+					"address": {
+						"city": "Mountain View",
+						"country": "United States",
+						"country_code": "US"
+					},
+					"gmtOffset": "-8",
+					"dstOffset": "-7"
+				}
+			}
+		},
+		{
+			"66.249.95.67": [
+				17,
+				19,
+				22
+			],
+			"ip": "66.249.95.67",
+			"geoip": {
+				"ip": "66.249.95.67",
+				"timestamp": 1372338161418,
+				"location": {
+					"coords": {
+						"latitude": "34.9461",
+						"longitude": "-92.0858"
+					},
+					"address": {
+						"city": "Cabot",
+						"country": "United States",
+						"country_code": "US"
+					},
+					"gmtOffset": "-6",
+					"dstOffset": "-5"
+				}
+			}
+		},
+		{
+			"209.85.248.173": [
+				33,
+				36,
+				36
+			],
+			"ip": "209.85.248.173",
+			"geoip": {
+				"ip": "209.85.248.173",
+				"timestamp": 1372338161870,
+				"location": {
+					"coords": {
+						"latitude": "37.4192",
+						"longitude": "-122.057"
+					},
+					"address": {
+						"city": "Mountain View",
+						"country": "United States",
+						"country_code": "US"
+					},
+					"gmtOffset": "-8",
+					"dstOffset": "-7"
+				}
+			}
+		},
+		{
+			"209.85.251.249": [
+				33,
+				34,
+				34
+			],
+			"ip": "209.85.251.249",
+			"geoip": {
+				"ip": "209.85.251.249",
+				"timestamp": 1372338162324,
+				"location": {
+					"coords": {
+						"latitude": "37.4192",
+						"longitude": "-122.057"
+					},
+					"address": {
+						"city": "Mountain View",
+						"country": "United States",
+						"country_code": "US"
+					},
+					"gmtOffset": "-8",
+					"dstOffset": "-7"
+				}
+			}
+		},
+		{
+			"209.85.243.233": [
+				35,
+				33,
+				33
+			],
+			"ip": "209.85.243.233",
+			"geoip": {
+				"ip": "209.85.243.233",
+				"timestamp": 1372338162913,
+				"location": {
+					"coords": {
+						"latitude": "37.4192",
+						"longitude": "-122.057"
+					},
+					"address": {
+						"city": "Mountain View",
+						"country": "United States",
+						"country_code": "US"
+					},
+					"gmtOffset": "-8",
+					"dstOffset": "-7"
+				}
+			}
+		},
+		{
+			"173.194.113.127": [
+				34,
+				34,
+				32
+			],
+			"ip": "173.194.113.127",
+			"geoip": {
+				"ip": "173.194.113.127",
+				"timestamp": 1372338163680,
+				"location": {
+					"coords": {
+						"latitude": "37.4192",
+						"longitude": "-122.057"
+					},
+					"address": {
+						"city": "Mountain View",
+						"country": "United States",
+						"country_code": "US"
+					},
+					"gmtOffset": "-8",
+					"dstOffset": "-7"
+				}
+			}
+		}
+	]
+}
