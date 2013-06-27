@@ -38,7 +38,7 @@ var map = new L.Map("map", {
 var layers = [];
 var alldata;
 
-var jdata = ['dropbox.com', 'google.com', 'google.com', 'instagram.com', 'reddit.com', 'skype.com', 'soup.io', 'twitter.com', 'bild.de'];
+var jdata = ['dropbox.com', 'google.com', 'google.de', 'instagram.com', 'reddit.com', 'skype.com', 'soup.io', 'twitter.com', 'bild.de'];
 jdata.forEach(function (d) {
 	$('#urls').append('<a href="#" onclick="load(' + "'" + d + "'" + ')">' + d + '</a> ');
 });
