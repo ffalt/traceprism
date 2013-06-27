@@ -21,7 +21,7 @@ if ('development' == app.get('env')) {
 }
 
 app.get('/', function (req, res) {
-	res.render('index', { title: 'Express' });
+	res.render('index', { title: 'Traceprism' });
 });
 
 app.get('/tracegeoip/:cmd', function (req, res) {

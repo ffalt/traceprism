@@ -1,0 +1,21 @@
+*[hidden] {
+	display: none;
+}
+
+#map {
+	width: 960px;
+	height: 500px;
+}
+
+path {
+	stroke: #0e06e4;
+	stroke-width: 1px;
+}
+
+path:hover {
+	stroke: brown;
+}
+
+#ips {
+	padding-left:  4px;
+}
