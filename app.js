@@ -1,6 +1,8 @@
 var express = require('express')
 	, http = require('http')
 	, path = require('path')
+	, fs = require('fs')
+	, url = require('url')
 	, tracegeoip = require('./tracegeoip');
 
 var app = express();
@@ -24,12 +26,25 @@ app.get('/', function (req, res) {
 	res.render('index', { title: 'Traceprism' });
 });
 
+var datapath = path.resolve(__dirname, './data');
+
 app.get('/tracegeoip/:cmd', function (req, res) {
-	var trace = new tracegeoip.TraceGeoIP();
-	var filename = path.resolve(__dirname, './static/json') + '/' + req.params.cmd + '.json';
-	trace.trace(req.params.cmd, filename, function (result) {
-		res.json(result);
-	});
+	var u = url.parse(req.params.cmd);
+	var scan;
+	if (u.host) {
+		scan = u.host;
+	} else if (u.path) {
+		scan = u.path.split('/')[0];
+	}
+	if (scan) {
+		var trace = new tracegeoip.TraceGeoIP(datapath);
+		trace.trace(scan, function (result) {
+			res.json(result);
+			trace.storeResult(scan, result);
+		});
+	} else {
+		res.send(412);
+	}
 });
 
 http.createServer(app).listen(app.get('port'), function () {

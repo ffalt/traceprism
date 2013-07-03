@@ -3,7 +3,7 @@ $('#adress').submit(function () {
 	$('#input').attr("disabled", "disabled");
 	$('#spinner').removeAttr("hidden");
 	$.ajax({
-		url: '/tracegeoip/' + $('#input').val(),
+		url: '/tracegeoip/' + encodeURIComponent($('#input').val()),
 		dataType: 'json',
 		timeout: 9999999999,
 		success: function (data) {
@@ -38,11 +38,6 @@ var map = new L.Map("map", {
 var layers = [];
 var alldata;
 
-var jdata = ['dropbox.com', 'google.com', 'google.de', 'instagram.com', 'reddit.com', 'skype.com', 'soup.io', 'twitter.com', 'bild.de'];
-jdata.forEach(function (d) {
-	$('#urls').append('<a href="#" onclick="load(' + "'" + d + "'" + ')">' + d + '</a> ');
-});
-
 function load(url) {
 	loadData("static/json/" + url + ".json");
 }
@@ -66,12 +61,6 @@ function addPathPart(src, dest, cb) {
 	});
 	layers.push(b);
 	map.addLayer(b);
-}
-
-function addMarker(latlng) {
-	var m = new R.Marker(latlng);
-	layers.push(m);
-	map.addLayer(m);
 }
 
 function addPulse(latlng) {
@@ -100,8 +89,13 @@ function startPath(pathdata) {
 	});
 	layers = [];
 	var path = [];
-	pathdata.waypoints.forEach(function (p) {
-		path.push(new L.LatLng(p[1], p[0]));
+	pathdata.hops.forEach(function (hop) {
+		var p =
+			new L.LatLng(
+				hop.geoip.location.coords.latitude,
+				hop.geoip.location.coords.longitude
+			);
+		path.push(p);
 	});
 	$('#ips').append(getHopsText(alldata.hops[0]));
 	map.panTo(path[0]);

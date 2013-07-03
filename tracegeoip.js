@@ -1,38 +1,41 @@
 var traceroute = require('traceroute');
 //var geoip = require('geoip-lite');
-var fs = require('fs');
 var request = require('request');
+var fs = require('fs');
+var path = require('path');
 
-function TraceGeoIP() {
+function TraceGeoIP(datapath) {
+	this.datapath = datapath;
+	this.geoips = {};
+	this.geoips_file = datapath + '/geoip.json';
+	if (fs.existsSync(this.geoips_file))
+		this.geoips = JSON.parse(fs.readFileSync(this.geoips_file, 'utf8'));
 }
+
 TraceGeoIP.prototype = {
 
-	saveData: function (result, filename, cb) {
-		if (!filename) {
-			cb();
-			return;
-		}
-		fs.writeFile(filename, JSON.stringify(result, null, '\t'), 'utf8', function (err) {
+	save_geoips: function () {
+		fs.writeFile(this.geoips_file, JSON.stringify(this.geoips, null, '\t'), 'utf8', function (err) {
 			if (err) {
-				console.log('Error:' + err);
-			} else {
-				console.log(filename + " saved!");
+				console.log('Cache Write Error:' + err);
 			}
-			cb();
 		});
 	},
 
 	geoip_proto: function (hop, result, cb) {
+		if (this.geoips[hop.ip]) {
+			cb(this.geoips[hop.ip]);
+			return;
+		}
+		console.log('lookup geoip ' + hop.ip);
+		var caller = this;
 		request('http://geoip.prototypeapp.com/api/locate?ip=' + hop.ip, function (error, response, body) {
+			var geoip = null;
 			if (!error && response.statusCode == 200) {
-				var geoip = JSON.parse(body);
-				if (geoip && (geoip.location.coords.longitude != "0")) {
-					hop.geoip = geoip;
-					result.hops.push(hop);
-					result.waypoints.push([hop.geoip.location.coords.longitude, hop.geoip.location.coords.latitude]);
-				}
+				geoip = JSON.parse(body);
+				caller.geoips[hop.ip] = geoip;
 			}
-			cb();
+			cb(geoip);
 		});
 	},
 
@@ -53,20 +56,23 @@ TraceGeoIP.prototype = {
 		if (index >= hops.length) {
 			cb();
 		} else {
-			console.log('lookup geoip ' + hops[index].ip);
-			caller.geoip_proto(hops[index], result, function () {
+			var hop = hops[index];
+			caller.geoip_proto(hop, result, function (geoip) {
+				if (geoip && (geoip.location.coords.longitude != "0")) {
+					hop.geoip = geoip;
+					result.hops.push(hop);
+				}
 				caller.geoIt(index + 1, hops, result, cb);
 			});
 		}
 	},
 
-	trace: function (url, filename, cb) {
+	trace: function (url, cb) {
 		console.log('tracing ' + url);
 		var caller = this;
 		traceroute.trace(url, function (err, hops) {
 			if (!err) {
-				console.log(hops);
-				var result = {url: url, waypoints: [], hops: []};
+				var result = {url: url, hops: [], time: new Date()};
 				var h = [];
 				var last = "";
 				hops.forEach(function (hop) {
@@ -79,15 +85,38 @@ TraceGeoIP.prototype = {
 					}
 				});
 				caller.geoIt(0, h, result, function () {
-					caller.saveData(result, filename, function () {
-						if (cb)
-							cb(result);
-					});
+					if (cb)
+						cb(result);
+					caller.save_geoips();
 				});
 			}
 		});
+	},
 
+	storeResult: function (url, result, cb) {
+		var filename = this.datapath + '/' + url + '.json';
+
+		function saveList(list) {
+			list.push(result);
+			fs.writeFile(filename, JSON.stringify(list, null, "\t"), 'utf8', function (err) {
+				if (cb)
+					cb();
+			});
+		}
+
+		fs.exists(filename, function (exists) {
+			if (exists) {
+				fs.readFile(filename, 'utf8', function (err, data) {
+					var list = JSON.parse(data);
+					saveList(list);
+				});
+			} else {
+				saveList([]);
+			}
+		});
 	}
-};
+
+}
+;
 
 exports.TraceGeoIP = TraceGeoIP;
