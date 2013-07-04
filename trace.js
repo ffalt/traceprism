@@ -49,7 +49,7 @@ function traceUrl(url, count, cb) {
 function traceUrlNr(index) {
 	var url = urls[index];
 	traceUrl(url, count, function () {
-		if (index >= urls.length) {
+		if (index + 1 >= urls.length) {
 			console.log('all done <3');
 		} else {
 			traceUrlNr(index + 1);
