@@ -1,5 +1,4 @@
 var path = require('path');
-var fs = require('fs');
 var tracegeoip = require('./tracegeoip');
 var destpath = path.resolve(__dirname, './data');
 
